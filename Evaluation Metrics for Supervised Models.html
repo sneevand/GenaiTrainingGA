@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/internal-resources/data/config.json" id="prefetch-config-link-element" as="fetch" crossorigin="" type="application/json">
+    <link rel="preload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/fonts/barlow-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/fonts/barlow-semi-condensed-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/fonts/nunito-sans-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/fonts/cascadia-mono.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/js/page-build.min.js">
+    <link rel="modulepreload" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/js/config.min.js">
+    <link rel="preload" href="./Evaluation Metrics for Supervised Models_files/hero-logo.png" as="image">
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Evaluation Metrics for Supervised Models_files/page-theme.min.css">
+    <link rel="stylesheet" href="./Evaluation Metrics for Supervised Models_files/code-theme.min.css">
+    <script src="./Evaluation Metrics for Supervised Models_files/highlightjs.min.js.download"></script>
+    <script src="./Evaluation Metrics for Supervised Models_files/highlightjs-copy.min.js.download"></script>
+    <script src="./Evaluation Metrics for Supervised Models_files/medium-zoom.min.js.download"></script>
+    <script src="./Evaluation Metrics for Supervised Models_files/anchor.min.js.download"></script>
+    <script src="./Evaluation Metrics for Supervised Models_files/custom.min.js.download"></script>
+    <script src="./Evaluation Metrics for Supervised Models_files/custom-defer.min.js.download" type="module"></script>
+    <link rel="icon" type="image/png" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/assets/favicon.png">
+    <title>Evaluation Metrics for Supervised Models</title>
+  </head>
+  <body><header id="tc-header" class="border-bottom position-sticky top-0"><nav id="tc-nav" class="container-lg px-3 d-flex flex-items-center"><button id="tc-sub-nav-button" class="border-0 p-1" aria-label="Open navigation" aria-controls="tc-sub-nav-container" aria-expanded="false"><svg id="tc-hamburger-icon" class="visible" width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 13h7M1 1h16H1Zm0 6h16H1Z"></path></svg><svg id="tc-close-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 12 12M1 13 13 1 1 13Z"></path></svg></button></nav><div id="tc-sub-nav-container" class="d-grid" aria-hidden="true"><nav id="tc-sub-nav" class="container-lg px-3 width-full"><div><h2 class="no-anchor p-0 mt-2 mb-3 h1"><a class="no-underline" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/canvas-landing-pages/fallback.html">Evaluation Metrics for Supervised ML Models</a></h2><h3 class="no-anchor">Content</h3><ul class="list-style-none pl-3 mt-1 mb-3 d-flex flex-column gap-2"><li class="f4"><a class="f4 text-bold no-underline" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/model-evaluation-overview/">Model Evaluation Overview</a></li><li class="f4"><a class="f4 text-bold no-underline" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/hands-on-classification-metrics/">Hands-on: Classification Metrics</a></li><li class="f4"><a class="f4 text-bold no-underline" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/hands-on-regression-metrics/">Hands-on: Regression Metrics</a></li><li class="f4"><a class="f4 text-bold no-underline" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/case-study-discussion/">Case Study &amp; Discussion</a></li></ul></div><div><div class="mt-4 mb-3 d-flex gap-3 flex-wrap"><button id="tc-sticky-nav-button" class="border-1 rounded-1 border-emphasis px-3 py-2">Disable sticky nav</button><button id="tc-dark-mode-button" class="border-1 rounded-1 border-emphasis px-3 py-2">Enable dark mode</button></div></div></nav></div></header>
+    
+    <main class="container-lg px-3 mt-4 mb-6 markdown-body" style="min-height: calc(-169px + 100dvh);"><div id="hero"><div><img alt="Logo" class="no-zoom" src="./Evaluation Metrics for Supervised Models_files/hero-logo.png"></div><h1>
+  <span class="prefix"></span>
+  <span class="headline">Evaluation Metrics for Supervised ML Models</span>
+</h1></div>
+
+<h2 id="about">About<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/#about" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h2>
+
+<p>This module provides a <strong>hands-on approach</strong> to evaluating supervised machine learning models. Students will explore essential evaluation metrics and learn how to interpret them to enhance model performance. Through coding exercises and case studies, students will develop a strong foundation in selecting the right metrics based on the business and data context.</p>
+
+<p>By the end of this module, students will be able to:</p>
+<ul>
+  <li>Explain the importance of model evaluation in improving decision-making and predictive accuracy.</li>
+  <li>Compute and interpret key classification and regression metrics, including accuracy, precision, recall, F1-score, mean squared error, and R-squared.</li>
+  <li>Apply evaluation techniques to real-world machine learning tasks.</li>
+  <li>Assess model strengths and weaknesses using performance metrics and recommend improvements.
+    <h2 id="content">Content<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/#content" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h2>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lesson</th>
+      <th>Est. Delivery Time</th>
+      <th>Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/model-evaluation-overview/">Model Evaluation Overview</a></td>
+      <td>10 min</td>
+      <td>Explain the need for evaluating ML models.</td>
+    </tr>
+    <tr>
+      <td><a href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/hands-on-classification-metrics/">Hands-on: Classification Metrics</a></td>
+      <td>25 min</td>
+      <td>Select appropriate metrics based on business needs and data characteristics.</td>
+    </tr>
+    <tr>
+      <td><a href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/hands-on-regression-metrics/">Hands-on: Regression Metrics</a></td>
+      <td>25 min</td>
+      <td>Evaluate and summarize the performance of classification models.</td>
+    </tr>
+    <tr>
+      <td><a href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/evaluation-metrics-for-supervised-ml-models/case-study-discussion/">Case Study &amp; Discussion</a></td>
+      <td>30 min</td>
+      <td>Evaluate and summarize the performance of regression models.</td>
+    </tr>
+    <tr>
+      <td><strong>Total content</strong></td>
+      <td>1 hr 30 min</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</main>
+  
+
+<footer id="tc-footer" class="border-top"><nav id="tc-footer-items" class="container-lg px-3 d-flex flex-items-center flex-justify-between"><p id="tc-footer-left"></p><div id="tc-footer-legal" class="f6 d-flex flex-column flex-items-center px-3"><p>© 2025 General Assembly</p><a href="https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources/docs/v2/attributions.html" target="blank_" class="f7">Attributions</a></div><p id="tc-footer-right"></p></nav></footer></body></html>
